@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch</title>
+    <link href="css/scratchstyles.css" rel="stylesheet" />
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background: #555;
+        }
+
+        /* CONTENT */
+        .container {
+            padding-top: 60px; /* space for navbar */
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            margin: 20px 0 10px;
+        }
+
+        iframe {
+            margin-bottom: 30px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 8px 12px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-to-top:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="webapp.html">Webapp</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>I'm very passionate about basketball</h1>
+
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/ORfjgE6n2Pc"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <h1>Lebron Tableau</h1>
+        <div class='tableauPlaceholder' id='viz1765759239260' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='NBAShots'
+                        src='https://public.tableau.com/static/images/NB/NBAShots_15945788351370/NBAShots/1_rss.png'
+                        style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='NBAShots_15945788351370/NBAShots' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1765759239260');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1300px';
+            vizElement.style.height = '827px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h2>Why I Love Basketball</h2>
+        <ul>
+            <li>Basketball is exciting</li>
+            <li>Favorite NBA Players
+                <ol>
+                    <li>LeBron James</li>
+                    <li>Stephen Curry</li>
+                    <li>Kobe Bryant</li>
+                </ol>
+            </li>
+            <li>It brings people together</li>
+        </ul>
+
+        <!-- Back to Top Button -->
+        <a href="#top" class="back-to-top">Back To Top</a>
+    </div>
+
+</body>
+</html>
